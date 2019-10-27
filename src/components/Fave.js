@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Fave extends Component {
+class Fave extends Component {
   handleClick = e => {
     e.stopPropagation();
     this.props.onFaveToggle();
@@ -15,3 +15,5 @@ export default class Fave extends Component {
     );
   }
 }
+
+export default Fave;
